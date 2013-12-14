@@ -1,0 +1,50 @@
+(input-method eng chatto (version   "1.6.2"))
+
+(description   "Anubhav Chattoraj's extended keyboard layout.
+Author: Anubhav Chattoraj <anubhav.chattoraj@gmail.com>
+Project page: http://github.com/anubhav-chattoraj/sanetype")
+
+(map
+    (map
+        ((G-A) "Ə")
+        ((G-a) "ə")
+        ((G-C) "Ȼ")
+        ((G-c) "ȼ")
+        ((G-D) "Ð")
+        ((G-d) "ð")
+        ((G-E) "Ɛ")
+        ((G-e) "ɛ")
+        ((G-G) "Ɣ")
+        ((G-g) "ɣ")
+        ((G-I) "Ɨ")
+        ((G-i) "ɪ")
+        ((G-N) "Ŋ")
+        ((G-n) "ŋ")
+        ((G-O) "Ɔ")
+        ((G-o) "ɔ")
+        ((G-S) "Ʃ")
+        ((G-s) "ʃ")
+        ((G-T) "Θ")
+        ((G-t) "θ")
+        ((G-U) "Ʊ")
+        ((G-u) "ʊ")
+        ((G-V) "Ʋ")
+        ((G-v) "ʋ")
+        ((G-W) "Ɒ")
+        ((G-w) "ɒ")
+        ((G-Y) "Æ")
+        ((G-y) "æ")
+        ((G-Z) "Ʒ")
+        ((G-z) "ʒ")
+        ((G-.) "̣") ; dot below
+        ((G--) "̄") ; macron
+        ((G-m) "̃") ; tilde
+        ((G-x) "̌") ; caron
+        ((G-[) "‘")
+        ((G-]) "’")
+        ((G-{) "“")
+        ((G-}) "”")))
+
+(state
+    (init
+        (map)))
