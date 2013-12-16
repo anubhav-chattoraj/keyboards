@@ -6,6 +6,7 @@ Project page: http://github.com/anubhav-chattoraj/sanetype")
 
 (map
     (map
+        ((G-4) "₹")
         ((G-A) "Ə")
         ((G-a) "ə")
         ((G-C) "Ȼ")
