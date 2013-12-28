@@ -141,10 +141,12 @@ Author: Anubhav Chattoraj <anubhav.chattoraj@gmail.com>")
     ("'G"  "ˠ")   ; velarized
     ("'H;" "ˤ")   ; pharyngeal
     ("-d"  "̪")   ; dental
-    ("~"   "̃")   ; nasalized
+    ("`"   "̃")   ; nasalized
     ("'n"  "ⁿ")  ; nasal release
     ("'l"  "ˡ")  ; lateral release
-    ("`"   "̚"))) ; no audible release
+    ; arrows
+    ("->"  "→")   ; right arrow
+    ("<-"  "←"))) ; left arrow
 (state
   (init
     (map)))
