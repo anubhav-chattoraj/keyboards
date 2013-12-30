@@ -39,6 +39,8 @@ Project page: http://github.com/anubhav-chattoraj/sanetype")
         ((G-z) "ʒ")
         ((G-.) "̣") ; dot below
         ((G--) "̄") ; macron
+        ((G-\') "́") ; acute
+        ((G-\") "̈") ; diaeresis
         ((G-m) "̃") ; tilde
         ((G-x) "̌") ; caron
         ((G-[) "‘")
