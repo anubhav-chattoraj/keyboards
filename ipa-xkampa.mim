@@ -144,9 +144,10 @@ Author: Anubhav Chattoraj <anubhav.chattoraj@gmail.com>")
     ("`"   "̃")   ; nasalized
     ("'n"  "ⁿ")  ; nasal release
     ("'l"  "ˡ")  ; lateral release
-    ; arrows
+    ; other symbols
     ("->"  "→")   ; right arrow
     ("<-"  "←")   ; left arrow
+    (";"   "∅")   ; empty set (for null phonemes)
     ; change state
     ("_" (shift subscript))
     ("^" (shift superscript)))
