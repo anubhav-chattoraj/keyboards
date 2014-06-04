@@ -1,18 +1,17 @@
 (input-method eng chatto (version   "1.6.2"))
 
 (description   "Anubhav Chattoraj's extended keyboard layout.
-Author: Anubhav Chattoraj <anubhav.chattoraj@gmail.com>
-Project page: http://github.com/anubhav-chattoraj/sanetype")
+Author: Anubhav Chattoraj <anubhav.chattoraj@gmail.com>")
 
 (map
-    (map
-        ((G-4) "₹")
-        ((G-[) "‘")
-        ((G-]) "’")
-        ((G-{) "“")
-        ((G-}) "”")
-        ((G-<) "←")
-        ((G->) "→")))
+  (map
+    ((G-4) "₹")
+    ((G-[) "‘")
+    ((G-]) "’")
+    ((G-{) "“")
+    ((G-}) "”")
+    ((G-<) "←")
+    ((G->) "→")))
 (state
-    (init
-        (map)))
+  (init
+    (map)))
