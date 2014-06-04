@@ -10,8 +10,15 @@ Author: Anubhav Chattoraj <anubhav.chattoraj@gmail.com>")
     ((G-]) "’")
     ((G-{) "“")
     ((G-}) "”")
+    ("..." "…") ; ellipsis
+    ("--"  "–") ; en-dash
+    ("---" "—") ; em-dash
+    ((G-o) "ಠ_ಠ") ; look of disapproval
     ((G-<) "←")
-    ((G->) "→")))
+    ((G->) "→")
+    ((G-') "́") ; acute accent
+    ((G-;) "̄") ; macron
+    ((G-.) "̣"))) ; dot below
 (state
   (init
     (map)))
