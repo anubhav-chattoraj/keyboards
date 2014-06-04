@@ -1,0 +1,191 @@
+(input-method t ipa-xkampa)
+
+(description "An IPA input method.
+Missing several diacritics & tones because the author didn't need them.
+Author: Anubhav Chattoraj <anubhav.chattoraj@gmail.com>")
+
+(title "IPA")
+
+(map
+  (map
+    ; consonants (pulmonic)
+    ("p"   "p")   ; voiceless bilabial       plosive
+    ("b"   "b")   ; voiced    bilabial       plosive
+    ("m"   "m")   ; voiced    bilabial       nasal
+    ("B,"  "ʙ")   ; voiced    bilabial       trill
+    ("P"   "ɸ")   ; voiceless bilabial       fricative
+    ("B"   "β")   ; voiced    bilabial       fricative
+    ("M"   "ɱ")   ; voiced    labiodental    nasal
+    ("F"   "ⱱ")   ; voiced    labiodental    flap
+    ("f"   "f")   ; voiceless labiodental    fricative
+    ("v"   "v")   ; voiced    labiodental    fricative
+    ("V"   "ʋ")   ; voiced    labiodental    approximant
+    ("T"   "θ")   ; voiceless dental         fricative
+    ("D"   "ð")   ; voiced    dental         fricative
+    ("t"   "t")   ; voiceless alveolar       plosive
+    ("d"   "d")   ; voiced    alveolar       plosive
+    ("n"   "n")   ; voiced    alveolar       nasal
+    ("z,"  "r")   ; voiced    alveolar       trill
+    ("r"   "ɾ")   ; voiced    alveolar       flap
+    ("s"   "s")   ; voiceless alveolar       fricative
+    ("z"   "z")   ; voiced    alveolar       fricative
+    ("{"   "ɬ")   ; voiceless alveolar       lateral fricative
+    ("}"   "ɮ")   ; voiced    alveolar       lateral fricative
+    ("R"   "ɹ")   ; voiced    alveolar       approximant
+    ("l"   "l")   ; voiced    alveolar       lateral approximant
+    ("S"   "ʃ")   ; voiceless postalveolar   fricative
+    ("Z"   "ʒ")   ; voiced    postalveolar   fricative
+    ("t;"  "ʈ")   ; voiceless retroflex      plosive
+    ("d;"  "ɖ")   ; voiced    retroflex      plosive
+    ("n;"  "ɳ")   ; voiced    retroflex      nasal
+    ("r;"  "ɽ")   ; voiced    retroflex      flap
+    ("s;"  "ʂ")   ; voiceless retroflex      fricative
+    ("z;"  "ʐ")   ; voiced    retroflex      fricative
+    ("R;"  "ɻ")   ; voiced    retroflex      approximant
+    ("l;"  "ɭ")   ; voiced    retroflex      lateral approximant
+    ("c"   "c")   ; voiceless palatal        plosive
+    ("j"   "ɟ")   ; voiced    palatal        plosive
+    ("9"   "ɲ")   ; voiced    palatal        nasal
+    ("4"   "ç")   ; voiceless palatal        fricative
+    ("5"   "ʝ")   ; voiced    palatal        fricative
+    ("y"   "j")   ; voiced    palatal        approximant
+    ("L"   "ʎ")   ; voiced    palatal        lateral approximant
+    ("k"   "k")   ; voiceless velar          plosive
+    ("g"   "ɡ")   ; voiced    velar          plosive
+    ("N"   "ŋ")   ; voiced    velar          nasal
+    ("x"   "x")   ; voiceless velar          fricative
+    ("G"   "ɣ")   ; voiced    velar          fricative
+    ("Y"   "ɰ")   ; voiced    velar          approximant
+    ("K"   "ʟ")   ; voiced    velar          lateral approximant
+    ("k;"  "q")   ; voiceless uvular         plosive
+    ("g;"  "ɢ")   ; voiced    uvular         plosive
+    ("N;"  "ɴ")   ; voiced    uvular         nasal
+    ("G;," "ʀ")   ; voiced    uvular         trill
+    ("x;"  "χ")   ; voiceless uvular         fricative
+    ("G;"  "ʁ")   ; voiced    uvular         fricative
+    ("h;"  "ħ")   ; voiceless pharyngeal     fricative
+    ("H;"  "ʕ")   ; voiced    pharyngeal     fricative
+    ("?"   "ʔ")   ; voiceless glottal        plosive
+    ("h"   "h")   ; voiceless glottal        fricative
+    ("H"   "ɦ")   ; voiced    glottal        fricative
+    ; consonants (non-pulmonic)
+    ("0"   "ʘ")   ; voiced    bilabial       click
+    ("1"   "ǀ")   ; voiced    dental         click
+    ("!"   "ǃ")   ; voiced    postalveolar   click
+    ("#"   "ǂ")   ; voiced    palatoalveolar click
+    ("2"   "ǁ")   ; voiced    alveolar       lateral click
+    ("b,"  "ɓ")   ; voiced    bilabial       implosive
+    ("d,"  "ɗ")   ; voiced    alveolar       implosive
+    ("j,"  "ʄ")   ; voiced    palatal        implosive
+    ("g,"  "ɠ")   ; voiced    velar          implosive
+    ("g;," "ʛ")   ; voiced    uvular         implosive
+    ("''"  "ʼ")   ;                          ejective
+    ; other symbols
+    ("W"   "ʍ")   ; voiceless labial-velar   fricative
+    ("w"   "w")   ; voiceless labial-velar   approximant
+    ("6"   "ɥ")   ; voiced    labial-palatal approximant
+    ("h,"  "ʜ")   ; voiceless epiglottal     fricative
+    ("H,"  "ʢ")   ; voiced    epiglottal     fricative
+    ("?,"  "ʡ")   ; voiced    epiglottal     plosive
+    ("C"   "ɕ")   ; voiceless alveolopalatal fricative
+    ("J"   "ʑ")   ; voiced    alveolopalatal fricative
+    ("7"   "ɺ")   ; voiced    alveolar       lateral flap
+    ("X"   "ɧ")   ; simultaneous ʃ and x
+    ; vowels
+    ("i"   "i")   ; close      front      unrounded
+    ("i;"  "y")   ; close      front      rounded
+    ("i,"  "ɨ")   ; close      central    unrounded
+    ("u,"  "ʉ")   ; close      central    rounded
+    ("u;"  "ɯ")   ; close      back       unrounded
+    ("u"   "u")   ; close      back       rounded
+    ("I"   "ɪ")   ; near-close near-front unrounded
+    ("I;"  "ʏ")   ; near-close near-front rounded
+    ("U"   "ʊ")   ; near-close near-back  rounded
+    ("e"   "e")   ; close-mid  front      unrounded
+    ("e;"  "ø")   ; close-mid  front      rounded
+    ("e,"  "ɘ")   ; close-mid  central    unrounded
+    ("o,"  "ɵ")   ; close-mid  central    rounded
+    ("o;"  "ɤ")   ; close-mid  back       unrounded
+    ("o"   "o")   ; close-mid  back       rounded
+    ("q"   "ə")   ; mid        central
+    ("E"   "ɛ")   ; open-mid   front      unrounded
+    ("E;"  "œ")   ; open-mid   front      rounded
+    ("E,"  "ɜ")   ; open-mid   central    unrounded
+    ("O,"  "ɞ")   ; open-mid   central    rounded
+    ("O;"  "ʌ")   ; open-mid   back       unrounded
+    ("O"   "ɔ")   ; open-mid   back       rounded
+    ("3"   "æ")   ; near-open  front      unrounded
+    ("Q"   "ɐ")   ; near-open  central
+    ("a"   "a")   ; open       front      unrounded
+    ("a;"  "ɶ")   ; open       front      rounded
+    ("A;"  "ɑ")   ; open       back       unrounded
+    ("A"   "ɒ")   ; open       back       rounded
+    ; suprasegmentals
+    ("\""  "ˈ")   ; primary stress
+    ("\"\"""ˌ")   ; secondary stress
+    (":"   "ː")   ; long
+    ("*"   "ˑ")   ; half-long
+    ("**"  "̆")    ; extra short
+    ("|"   "|")   ; minor (foot) group
+    ("||"  "‖")   ; major (intonation) group
+    ("."   ".")   ; syllable break
+    (".."  "‿")   ; linking
+    ; diacritics
+    ("'h"  "ʰ")   ; aspiration
+    ("-s"  "̩")   ; syllabic
+    ("-ns" "̯")   ; non-syllabic
+    ("'r"  "˞")   ; rhoticity
+    ("q'r" "ɚ")   ; rhotacized schwa
+    ("'w"  "ʷ")   ; labialized
+    ("'y"  "ʲ")   ; palatalized
+    ("'G"  "ˠ")   ; velarized
+    ("'H;" "ˤ")   ; pharyngeal
+    ("-d"  "̪")   ; dental
+    ("`"   "̃")   ; nasalized
+    ("'n"  "ⁿ")  ; nasal release
+    ("'l"  "ˡ")  ; lateral release
+    ; other symbols
+    ("->"  "→")   ; right arrow
+    ("<-"  "←")   ; left arrow
+    (";"   "∅")   ; empty set (for null phonemes)
+    ; change state
+    ("_" (shift subscript))
+    ("^" (shift superscript)))
+  (subscript
+    ("0" "₀")
+    ("1" "₁")
+    ("2" "₂")
+    ("3" "₃")
+    ("4" "₄")
+    ("5" "₅")
+    ("6" "₆")
+    ("7" "₇")
+    ("8" "₈")
+    ("9" "₉")
+    ("^" (shift init)))
+  (superscript
+    ("0" "⁰")
+    ("1" "¹")
+    ("2" "²")
+    ("3" "³")
+    ("4" "⁴")
+    ("5" "⁵")
+    ("6" "⁶")
+    ("7" "⁷")
+    ("8" "⁸")
+    ("9" "⁹")
+    ("_" (shift init))))
+(state
+  (init
+    (map))
+  (subscript
+    (subscript)
+    (nil (shift init)))
+  (superscript
+    (superscript)
+    (nil (shift init))))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: emacs-lisp
+;; End:
