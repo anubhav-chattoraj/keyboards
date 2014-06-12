@@ -5,17 +5,20 @@ Author: Anubhav Chattoraj <anubhav.chattoraj@gmail.com>")
 
 (map
   (map
-    ((G-4) "₹")
     ((G-[) "‘")
     ((G-]) "’")
     ((G-{) "“")
     ((G-}) "”")
     ("..." "…") ; ellipsis
-    ("--"  "–") ; en-dash
-    ("---" "—") ; em-dash
+    ((G-n)  "–") ; en-dash
+    ((G-m) "—") ; em-dash
     ((G-o) "ಠ_ಠ") ; look of disapproval
-    ((G-<) "←")
-    ((G->) "→")
+    ("<-" "←")
+    ("->" "→")
+    ((G-x) "×") ; multiplication sign
+    ((G-r) "₹") ; rupee sign
+    ((G-l) "£") ; pound sign
+    ((G-y) "¥") ; yen sign
     ((G-') "́") ; acute accent
     ((G-;) "̄") ; macron
     ((G-.) "̣"))) ; dot below
