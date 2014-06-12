@@ -16,9 +16,10 @@ Author: Anubhav Chattoraj <anubhav.chattoraj@gmail.com>")
     ("<-" "←")
     ("->" "→")
     ((G-x) "×") ; multiplication sign
-    ((G-r) "₹") ; rupee sign
+    ((G-r) "₹") ; Indian rupee sign
     ((G-l) "£") ; pound sign
     ((G-y) "¥") ; yen sign
+    ((G-e) "€") : euro sign
     ((G-') "́") ; acute accent
     ((G-;) "̄") ; macron
     ((G-.) "̣"))) ; dot below
